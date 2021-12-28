@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Damion);
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+
+.palabras {
+    font-family: "Damion", cursive;
+    min-width: 100%;
+    text-align: center;
+    color: #8842d5;
+    text-shadow: 1px 1px #2c3a49;
+    font-size: 3em;
+    padding: 1rem 2rem;
+  }

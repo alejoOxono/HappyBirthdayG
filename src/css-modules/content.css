@@ -1,0 +1,44 @@
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    margin:0;
+    grid-template-areas:
+      "decoration message";
+  }
+  .decoration { grid-area: decoration; 
+    border-right: 5px solid #8942d5ad;
+  }
+  .message { grid-area: message; }
+
+  @media(max-width:700px){
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "decoration"
+          "message";
+      }
+      .decoration { grid-area: decoration; 
+        border-right: 0;
+        border-bottom: 5px solid #8942d5ad;
+      }
+      .message { grid-area: message; 
+        margin-top: -25vh;
+      }
+  }
+
+  .decoration {
+    margin:0;
+    background: #34e1ff;
+    font-family: "Fredoka One", cursive;
+    overflow-x: hidden;
+  }
+
+  .message {
+    background-image: url('../assets/massCircles.svg');
+  }
